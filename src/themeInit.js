@@ -2,7 +2,7 @@
  * @flow
  * Created by Dima Portenko on 17.05.2020
  */
-import {Typography, Colors, Spacings} from 'react-native-ui-lib';
+import {Typography, Colors, Spacings, Assets} from 'react-native-ui-lib';
 
 
 export const themeInit = () => {
@@ -19,4 +19,8 @@ export const themeInit = () => {
   Spacings.loadSpacings({
     screenOffset: 30,
   })
+
+  Assets.loadAssetsGroup('backgrounds', {
+    wet: require('../assets/background.jpg'),
+  });
 };
