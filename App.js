@@ -21,7 +21,6 @@ const App: () => React$Node = () => {
       </View>
       <View flex margin-screenOffset padding-s1 centerV >
         <Text center h1 blue10>RN UI LIB {Assets.emojis?.['100']}</Text>
-        <Text center h1 blue10>RN UI LIB {Assets.emojis.pizza}</Text>
         <View row>
           <Image assetName="check"/>
           <Image assetName="checkSmall"/>
