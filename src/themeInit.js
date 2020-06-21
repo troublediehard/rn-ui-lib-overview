@@ -2,7 +2,7 @@
  * @flow
  * Created by Dima Portenko on 17.05.2020
  */
-import {Typography, Colors, Spacings, Assets} from 'react-native-ui-lib';
+import {Typography, Colors, Spacings, Assets, ThemeManager} from 'react-native-ui-lib';
 
 
 export const themeInit = () => {
@@ -22,5 +22,15 @@ export const themeInit = () => {
 
   Assets.loadAssetsGroup('backgrounds', {
     wet: require('../assets/background.jpg'),
+  });
+
+  ThemeManager.setComponentTheme('Text', (props, context) => {
+
+    return {
+      h1: true,
+      gold: true,
+      h2: props.secondary,
+      pink: props.secondary,
+    };
   });
 };

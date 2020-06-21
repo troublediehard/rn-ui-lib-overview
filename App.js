@@ -21,6 +21,8 @@ const App: () => React$Node = () => {
       </View>
       <View flex margin-screenOffset padding-s1 centerV >
         <Text center h1 blue10>RN UI LIB {Assets.emojis?.['100']}</Text>
+        <Text>Primary {Assets.emojis?.['100']}</Text>
+        <Text secondary>Secondary {Assets.emojis?.['100']}</Text>
         <View row>
           <Image assetName="check"/>
           <Image assetName="checkSmall"/>
